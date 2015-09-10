@@ -1,0 +1,16 @@
+CREATE TABLE sensordatax (t int,d int,v double,PRIMARY KEY (t, d));
+CREATE TABLE sensordatay (t int,d int,v double,PRIMARY KEY (t, d));
+CREATE TABLE sensordataz (t int,d int,v double,PRIMARY KEY (t, d));
+CREATE TABLE sensordatah (t int,d int,v double,PRIMARY KEY (t, d));
+CREATE TABLE sensordatarx (t int,d int,v double,PRIMARY KEY (t, d));
+CREATE TABLE sensordatary (t int,d int,v double,PRIMARY KEY (t, d));
+CREATE TABLE sensordatarz (t int,d int,v double,PRIMARY KEY (t, d));
+CREATE TABLE sensordatarxy (t int,d int,v double,PRIMARY KEY (t, d));
+CREATE TABLE sensordatarxz (t int,d int,v double,PRIMARY KEY (t, d));
+CREATE TABLE sensordataryz (t int,d int,v double,PRIMARY KEY (t, d));
+CREATE TABLE sensordatarxyz (t int,d int,v double,PRIMARY KEY (t, d));
+CREATE TABLE sensordatarh (t int,d int,v double,PRIMARY KEY (t, d));
+# new
+CREATE TABLE wodi (s int,t int,e int,x int,y int,z int,h int, PRIMARY KEY ((s), t)) WITH CLUSTERING ORDER BY (t ASC);
+CREATE TABLE wodr (s int,d int,t int,e int,rx double,ry double,rz double,rh double,rxy double,rxz double,ryz double,rxyz double, PRIMARY KEY ((s, d), t)) WITH CLUSTERING ORDER BY (t ASC);
+CREATE TABLE wodd (s int,t int,e int,ax double,ay double,az double,ah double,axy double,axz double,ayz double,axyz double,dx int,dy int,dz int,dh int,dtx int,dty int,dtz int,dth int,qx double,qy double,qz double,qh double, PRIMARY KEY ((s), t)) WITH CLUSTERING ORDER BY (t ASC);
