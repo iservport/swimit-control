@@ -19,7 +19,4 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="1.7" />
   </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding UTF8" />
-  </component>
 </project>
